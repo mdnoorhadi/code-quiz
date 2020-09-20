@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-12 quizTopHeader">
                 <div class="quizTimer right">
-                    <span>Timer (in seconds):<br /><span id="qTimer">90</span></span>
+                    <span>Timer:<br /><span id="qTimer"></span></span>
                 </div>
             </div>
         </div>
@@ -27,19 +27,32 @@
             <div class="col-12">
                 <div class="quizMainContainer">
                     <h2>Question 1 of 3:</h2>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p></p>
                     <div class="quizOptions">
                         <ol>
-                            <li><a href="#">Hello</a></li>
-                            <li><a href="#">Hello world</a></li>
-                            <li><a href="#">Hello world. How are you?</a></li>
-                            <li><a href="#">Hello world. How are you? I'm fine thank you.</a></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ol>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="quizResultContainer clearfix">
+                    <div class="quizResult left">
+                        <span class="answerCorrect" style="display: none;">Your answer is correct!</span>
+                        <span class="answerIncorrect" style="display: none;">Your answer is wrong!</span>
+                    </div>
+                    <div class="nextQuestion right" style="display: none;">
+                        <a href="#"><button class="btn btn-light btn-lg quizBtn">Next Question</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -54,4 +67,5 @@
     <script src="./Assets/js/script.js"></script>
 
 </body>
+
 </html>

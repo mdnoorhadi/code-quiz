@@ -127,3 +127,36 @@ a:hover {
     font-weight: bold;
     font-size: 1.5rem;
 }
+
+.quizResultContainer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #dedede;
+    padding-top: 20px;
+}
+
+.quizResult {
+    padding-top: 10px;
+    color: #999999;
+    clear: both;
+}
+
+.quizResult .answerCorrect {
+    color: #4AA02C;
+    font-weight: bold;
+}
+
+.quizResult .answerIncorrect {
+    color: #9F000F;
+    font-weight: bold;
+}
+
+/* FIX THE FLOATS */
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
