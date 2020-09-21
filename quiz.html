@@ -25,17 +25,10 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="quizMainContainer">
-                    <h2>Question 1 of 3:</h2>
-                    <p></p>
-                    <div class="quizOptions">
-                        <ol>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ol>
-                    </div>
+                <div id="quizMainContainer">
+                    <h2 id="questionNum">Question 1 of 3:</h2>
+                    <p id="quizQuestion"></p>
+                    
                 </div>
             </div>
         </div>
@@ -43,12 +36,14 @@
             <div class="col-12">
                 <div class="quizResultContainer clearfix">
                     <div class="quizResult left">
-                        <span class="answerCorrect" style="display: none;">Your answer is correct!</span>
-                        <span class="answerIncorrect" style="display: none;">Your answer is wrong!</span>
+                        <span class="answerCorrect" style="display: none;"></span>
+                        <span class="answerIncorrect" style="display: none;"></span>
                     </div>
+                    <!--
                     <div class="nextQuestion right" style="display: none;">
                         <a href="#"><button class="btn btn-light btn-lg quizBtn">Next Question</button></a>
                     </div>
+                    -->
                 </div>
             </div>
         </div>
