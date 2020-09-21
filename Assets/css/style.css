@@ -43,7 +43,7 @@ a:hover {
     margin-top: 40px;
 }
 
-.quizMainContainer {
+#quizMainContainer {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -58,6 +58,8 @@ a:hover {
 .quizTopHeader {
     padding: 20px 0 20px 0;
 }
+
+/* QUIZ TIMER */
 
 .quizTimer {
     text-align: right;
@@ -76,44 +78,47 @@ a:hover {
         line-height: 24px;
     }
 
-.quizOptions ol {
-    color: #cccccc;
-    list-style-type: lower-roman;
+/* QUIZ OPTIONS */
+
+#quizMainContainer ul {
+    color: #808080;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.quizOptions ol li {
+#quizMainContainer ul li {
     margin-bottom: 5px;
-}
-
-.quizOptions ol li a {
-    display: block;
     background: #fafafa;
     border: 1px solid #dedede;
     padding: 5px 15px 5px 15px;
+    color: #555555;
 }
 
-.quizOptions ol li a:hover {
+#quizMainContainer ul li:hover {
     background: #eeeeee;
 }
 
 
-.quizOptions ol li.correct,
-.quizOptions ol li.correct a,
-.quizOptions ol li.correct a:hover {
+#quizMainContainer ul li.correct,
+#quizMainContainer ul li.correct a,
+#quizMainContainer ul li.correct a:hover {
     color: #ffffff;
     text-decoration: none;
     background: #4AA02C;
     border: 1px solid #347235;
 }
 
-.quizOptions ol li.incorrect,
-.quizOptions ol li.incorrect a,
-.quizOptions ol li.incorrect a:hover {
+#quizMainContainer ul li.incorrect,
+#quizMainContainer ul li.incorrect a,
+#quizMainContainer ul li.incorrect a:hover {
     color: #9F000F;
     text-decoration: none;
     background: #F62217;
     border: 1px solid #9F000F;
 }
+
+/* COMPLETE PAGE */
 
 .quizComplete {
     width: 50%;
@@ -133,7 +138,7 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     border-top: 1px solid #dedede;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .quizResult {
