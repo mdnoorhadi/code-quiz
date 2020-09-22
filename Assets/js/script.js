@@ -63,7 +63,7 @@ function render(questionIndex) {
 // console.log(questionIndex);
 
 function compare(event) {
-    
+
     var element = event.target;
     var thisIsTheCurrentQuestion = questionIndex + 1; // Get the current question number and not the question index
 
@@ -86,13 +86,18 @@ function compare(event) {
 
     if (questionIndex >= questions.length) {
         alert("End of quiz! You scored " + score + " points!"); // alert user that time is up
+        localStorage.setItem("score", score);
         window.open("./complete.html", "_self"); // open a new window
-        //document.querySelector("#quizTotalScore").textContent = score;
     } else {
         render(questionIndex);
     }
 
 }
+
+
+
+// HIGHSCORE FUNCTION
+
 
 // START AND SHOW TIMER FUNCTION
 

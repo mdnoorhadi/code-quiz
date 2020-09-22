@@ -18,16 +18,14 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="quizMainContainer quizComplete">
+                <div id="quizMainContainer" class="quizComplete">
                     <h2>All Highscores:</h2>
                     <ol>
-                        <li>John McCain: 30</li>
-                        <li>Jean-Claude Van Damme: 20</li>
-                        <li>Shawn Michaels: 10</li>
+                        <li><span class="getName"></span>: <span class="getScore"></span></li>
                     </ol>
                     <div class="quizInitials">
                         <a href="./index.html"><button class="btn btn-info quizBtn">Start a new game</button></a>
-                        <button class="btn btn-dark quizBtn">Clear Highscores</button>
+                        <button id="btnClear" class="btn btn-dark quizBtn">Clear Highscores</button>
                     </div>
                 </div>
             </div>
@@ -45,5 +43,17 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <script>
+        window.onload = (event) => {
+            document.querySelector(".getName").textContent = localStorage.getItem("Initials");
+            document.querySelector(".getScore").textContent = localStorage.getItem("score");
+        };
+        document.querySelector("#btnClear").addEventListener("click", function () {
+            localStorage.clear();
+        });
+
+    </script>
+
 </body>
+
 </html>

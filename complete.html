@@ -18,15 +18,17 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="quizMainContainer quizComplete">
-                    <h2>All done!</h2>
-                    <p>
-                        Your score is: <span id="quizTotalScore"></span><br />
-                        Please enter your initials below:
-                    </p>
-                    <div class="quizInitials">
-                        <input type="text" />
-                        <button class="btn btn-primary quizBtn btn-block">Submit</button>
+                <div class="quizMainContainer">
+                    <div class="quizComplete">
+                        <h2>All done!</h2>
+                        <p>
+                            Your score is: <span id="quizTotalScore"></span> points<br />
+                            Please enter your initials below:
+                        </p>
+                        <div class="quizInitials">
+                            <input id="initialTextInput" type="text" />
+                            <button id="btnInitial" class="btn btn-primary quizBtn btn-block">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -44,5 +46,23 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <script>
+        window.onload = (event) => {
+            document.querySelector("#quizTotalScore").textContent = localStorage.getItem("score");
+        };
+
+        var getUserInitial = document.querySelector("#initialTextInput");
+        document.querySelector("#btnInitial").addEventListener("click", function () {
+            localStorage.setItem("Initials", getUserInitial.value);
+            console.log(getUserInitial.value);
+            console.log(localStorage.getItem("score"));
+            window.open("./highscore.html", "_self"); // open a new window
+        });
+        
+
+    </script>
+
+
 </body>
+
 </html>
